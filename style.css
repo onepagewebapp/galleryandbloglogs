@@ -1,0 +1,230 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+.container {
+    text-align: center;
+    color: dark;
+}
+  
+  .animated-title {
+      font-size: 3em;
+      animation: fadeIn 2s ease-in-out infinite alternate;
+    }
+    
+    .subtitle {
+        margin-top: 10px;
+        font-size: 1.2em;
+        opacity: 0.8;
+    }
+    
+    .animated-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: white;
+        background-color: #4e54c8;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    
+    .animated-button:hover {
+        transform: scale(1.1);
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+      from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+/* Full height image slider */
+/*.header {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: bgChange 10s infinite;
+    }*/
+    
+    /*h1 {
+        letter-spacing: 3px;
+        }*/
+        
+        /* Keyframes for image changing effect */
+        /*@keyframes bgChange {
+            0% { background-image: url('https://picsum.photos/id/0/367/267'); }
+            33% { background-image: url('https://picsum.photos/id/1/367/267'); }
+            66% { background-image: url('https://picsum.photos/id/2/367/267'); }
+    100% { background-image: url('https://picsum.photos/id/3/367/267'); }
+    }*/
+    
+    /*About us*/
+    .img-fluid {
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+    
+    
+    /* Services section hover effect */
+    .service-item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .service-item a {
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    .service-item a:hover {
+    text-decoration: none;
+    color: #007bff;
+    }
+    
+    /* Service image styling */
+    .service-img {
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    #services h2 {
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+    
+
+    
+
+    h3{
+        text-align: center;
+        letter-spacing: 7px;
+        font-size: 50px;
+    }
+    
+   
+    h3{
+        width: 100%;
+        font-weight: normal;
+        font-size: 20px;
+        position: relative;
+        margin: 40px 0;
+    }
+
+    h3::before{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background-color: crimson;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: animate 4s linear infinite;
+    }
+
+    @keyframes animate{
+        0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+    }
+    
+
+
+
+
+
+    /* Footer Styling */
+    .footer {
+        background-color: #141516;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+    }
+    
+    .footer h2 {
+        margin-bottom: 10px;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    
+    .footer .social-icons a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: #333;
+    }
+    
+    .footer .nav-icons a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .footer .nav-icons a:hover {
+        color: #007bff;
+    }
+    .footer .social-icons a:hover {
+        color: #007bff;
+    }
+    
+    /* Custom Styles for Oval Links and Buttons */
+    .rounded-pill-link {
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: #e8b938;
+        color: rgb(15, 14, 14);
+        text-decoration: none;
+        display: inline-block;
+        font: 1em sans-serif;
+    }
+    
+    .rounded-pill-link:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+    
+    .footer-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px; /* Add space between elements */
+    }
+    
+    /* Initial hidden state */
+    .animated {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.5s ease-out, transform 0.7s ease-out;
+    }
+    
+    /* Visible state */
+    .animated.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
